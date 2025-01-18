@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #5A3E3E;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #7B5C5C;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Form</h2>
+<form action="PLACEING.html" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="Metal-type">Select Metal:</label>
+    <select id="Metal-type" name="Metal-type" required>
+        <option value="">--Please choose an option--</option>
+        <option value="Gold">Gold</option>
+        <option value="Silver">Silver</option>
+           </select>
+
+    <label for="Jewellery">Select Jewellery:</label>
+    <select id="Jewellery" name="Jewellery" required>
+        <option value="">--Please choose an option--</option>
+        <option value="Pendant">Pendant</option>
+        <option value="Necklace">Neklace</option>
+        <option value="Ring">Ring</option>
+	<option value="Earring">Earring</option>
+	<option value="Set">Set</option>
+	<option value="Bengel">Bengle</option>
+    </select>
+
+    <label for="special-requests">Special Requests:</label>
+    <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+
+    <button type="submit">Place Order</button>
+	
+</form>
+
+</body>
+</html>
